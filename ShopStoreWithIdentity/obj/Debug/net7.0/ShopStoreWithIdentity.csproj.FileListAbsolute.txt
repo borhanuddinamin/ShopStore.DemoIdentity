@@ -1,0 +1,9 @@
+D:\DevSkill\ShopStoreWithIdentity\ShopStoreWithIdentity\obj\Debug\net7.0\ShopStoreWithIdentity.csproj.AssemblyReference.cache
+D:\DevSkill\ShopStoreWithIdentity\ShopStoreWithIdentity\obj\Debug\net7.0\ShopStoreWithIdentity.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\ShopStoreWithIdentity\ShopStoreWithIdentity\obj\Debug\net7.0\ShopStoreWithIdentity.AssemblyInfoInputs.cache
+D:\DevSkill\ShopStoreWithIdentity\ShopStoreWithIdentity\obj\Debug\net7.0\ShopStoreWithIdentity.AssemblyInfo.cs
+D:\DevSkill\ShopStoreWithIdentity\ShopStoreWithIdentity\obj\Debug\net7.0\ShopStoreWithIdentity.csproj.CoreCompileInputs.cache
+D:\DevSkill\ShopStoreWithIdentity\ShopStoreWithIdentity\obj\Debug\net7.0\ShopStoreWithIdentity.MvcApplicationPartsAssemblyInfo.cs
+D:\DevSkill\ShopStoreWithIdentity\ShopStoreWithIdentity\obj\Debug\net7.0\ShopStoreWithIdentity.MvcApplicationPartsAssemblyInfo.cache
+D:\DevSkill\ShopStoreWithIdentity\ShopStoreWithIdentity\obj\Debug\net7.0\ShopStoreWithIdentity.RazorAssemblyInfo.cache
+D:\DevSkill\ShopStoreWithIdentity\ShopStoreWithIdentity\obj\Debug\net7.0\ShopStoreWithIdentity.RazorAssemblyInfo.cs
