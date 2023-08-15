@@ -1,0 +1,9 @@
+F:\Git hub Project\ShopStore.DemoIdentity\ShopStore.Web\obj\Debug\net7.0\ShopStore.Web.csproj.AssemblyReference.cache
+F:\Git hub Project\ShopStore.DemoIdentity\ShopStore.Web\obj\Debug\net7.0\ShopStore.Web.GeneratedMSBuildEditorConfig.editorconfig
+F:\Git hub Project\ShopStore.DemoIdentity\ShopStore.Web\obj\Debug\net7.0\ShopStore.Web.AssemblyInfoInputs.cache
+F:\Git hub Project\ShopStore.DemoIdentity\ShopStore.Web\obj\Debug\net7.0\ShopStore.Web.AssemblyInfo.cs
+F:\Git hub Project\ShopStore.DemoIdentity\ShopStore.Web\obj\Debug\net7.0\ShopStore.Web.csproj.CoreCompileInputs.cache
+F:\Git hub Project\ShopStore.DemoIdentity\ShopStore.Web\obj\Debug\net7.0\ShopStore.Web.MvcApplicationPartsAssemblyInfo.cs
+F:\Git hub Project\ShopStore.DemoIdentity\ShopStore.Web\obj\Debug\net7.0\ShopStore.Web.MvcApplicationPartsAssemblyInfo.cache
+F:\Git hub Project\ShopStore.DemoIdentity\ShopStore.Web\obj\Debug\net7.0\ShopStore.Web.RazorAssemblyInfo.cache
+F:\Git hub Project\ShopStore.DemoIdentity\ShopStore.Web\obj\Debug\net7.0\ShopStore.Web.RazorAssemblyInfo.cs
