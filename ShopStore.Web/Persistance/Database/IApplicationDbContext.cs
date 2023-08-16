@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ShopStoreWithIdentity.Entity;
+using ShopStore.DemoIdentity.Entity;
 
-namespace ShopStoreWithIdentity.Persistance.Database
+namespace ShopStore.DemoIdentity.Persistance.Database
 {
     public interface IApplicationDbContext
     {

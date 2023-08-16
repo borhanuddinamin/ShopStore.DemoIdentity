@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ShopStoreWithIdentity.Controllers
+namespace ShopStore.DemoIdentity.Controllers
 {
     public class AdminController : Controller
     {

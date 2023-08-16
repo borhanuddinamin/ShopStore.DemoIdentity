@@ -1,10 +1,10 @@
 ﻿using Autofac;
-using ShopStoreWithIdentity.Entity;
-using ShopStoreWithIdentity.Models;
-using ShopStoreWithIdentity.Persistance;
-using ShopStoreWithIdentity.Persistance.Database;
-using ShopStoreWithIdentity.Persistance.Repository;
-using ShopStoreWithIdentity.Persistance.Repository.RepositoryInterface;
+using ShopStore.DemoIdentity.Entity;
+using ShopStore.DemoIdentity.Models;
+using ShopStore.DemoIdentity.Persistance;
+using ShopStore.DemoIdentity.Persistance.Database;
+using ShopStore.DemoIdentity.Persistance.Repository;
+using ShopStore.DemoIdentity.Persistance.Repository.RepositoryInterface;
 
 internal class ShopStoreModule : Module
 {

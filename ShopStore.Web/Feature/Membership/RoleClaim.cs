@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace ShopStoreWithIdentity.Feature.Membership
+namespace ShopStore.DemoIdentity.Feature.Membership
 {
     public class RoleClaim:IdentityRoleClaim<Guid>
     {

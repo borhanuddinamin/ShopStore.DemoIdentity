@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-using ShopStoreWithIdentity.Persistance;
+using ShopStore.DemoIdentity.Persistance;
 
-namespace ShopStoreWithIdentity.Persistance
+namespace ShopStore.DemoIdentity.Persistance
 {
     public class Repository<TEntity, Tkey> : IRepository<TEntity, Tkey>
-                     where TEntity : class
+                     where TEntity : class, IDisposable
     {
         private readonly DbContext _dbContext;
         private readonly DbSet<TEntity> _dbSet;

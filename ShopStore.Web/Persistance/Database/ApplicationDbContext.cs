@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using ShopStoreWithIdentity.Entity;
+using ShopStore.DemoIdentity.Entity;
 
-namespace ShopStoreWithIdentity.Persistance.Database
+namespace ShopStore.DemoIdentity.Persistance.Database
 {
     public class ApplicationDbContext:IdentityDbContext,IApplicationDbContext
     {

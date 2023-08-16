@@ -1,7 +1,8 @@
 using Autofac;
 using Autofac.Core;
 using Autofac.Extensions.DependencyInjection;
-using ShopStoreWithIdentity;
+using ShopStore.DemoIdentity;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,13 +12,14 @@ builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
 //<!---Autofac Setting--->
-
+var connectionString = builder.Configuration.GetConnectionString("connectionString");
+var assembly=Assembly.GetExecutingAssembly().FullName;
   builder.Host
      .UseServiceProviderFactory(new AutofacServiceProviderFactory());
   builder.Host
     .ConfigureContainer<ContainerBuilder>(container =>
   {
-      container.RegisterModule(new ShopStoreModule());
+      container.RegisterModule(new ShopStoreModule(connectionString, assembly));
    });
 
 

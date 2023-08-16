@@ -1,4 +1,4 @@
-﻿namespace ShopStoreWithIdentity.Entity
+﻿namespace ShopStore.DemoIdentity.Entity
 {
     public class Investor:IEntity<Guid>
     {

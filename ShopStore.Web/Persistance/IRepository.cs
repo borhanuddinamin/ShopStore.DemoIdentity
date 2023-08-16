@@ -1,6 +1,6 @@
-﻿namespace ShopStoreWithIdentity.Persistance
+﻿namespace ShopStore.DemoIdentity.Persistance
 {
-    public interface IRepository<TEntity, TKey> where TEntity : class
+    public interface IRepository<TEntity, TKey> where TEntity : class,IDisposable
     {
 
         bool Add(TEntity entity);
