@@ -1,10 +1,10 @@
 ﻿using Autofac;
-using ShopStore.DemoIdentity.Entity;
 using ShopStore.DemoIdentity.Models;
-using ShopStore.DemoIdentity.Persistance;
+
 using ShopStore.DemoIdentity.Persistance.Database;
-using ShopStore.DemoIdentity.Persistance.Repository;
-using ShopStore.DemoIdentity.Persistance.Repository.RepositoryInterface;
+
+using ShopStore.Web.Persistance.Repository;
+using ShopStore.Web.Persistance.Repository.RepositoryInterface;
 
 internal class ShopStoreModule : Module
 {
@@ -32,17 +32,17 @@ internal class ShopStoreModule : Module
             .InstancePerLifetimeScope();
 
 
-        builder.RegisterType<CustomerRepo>()
-            .As<ICustomerRepo>().InstancePerLifetimeScope();
+        builder.RegisterType<CustomerRepository>()
+            .As<ICustomerRepository>().InstancePerLifetimeScope();
 
-        builder.RegisterType<EmployeeRepo>()
-            .As<IEmployeeRepo>().InstancePerLifetimeScope();
+        builder.RegisterType<EmployeeRepository>()
+            .As<IEmployeeRepository>().InstancePerLifetimeScope();
 
-        builder.RegisterType<InvestorRepo>()
-            .As<InvestorRepo>().InstancePerLifetimeScope();
+        builder.RegisterType<InvestorRepository>()
+            .As<IInvestorRepository>().InstancePerLifetimeScope();
 
-        builder.RegisterType<OwnerRepo>()
-            .As<IOwnerRepo>().InstancePerLifetimeScope();
+        builder.RegisterType<OwnerRepository>()
+            .As<IOwnerRepository>().InstancePerLifetimeScope();
 
         builder.RegisterType<CustomerModel>()
              .AsSelf().InstancePerLifetimeScope();

@@ -5,7 +5,7 @@ using ShopStore.DemoIdentity.Persistance;
 namespace ShopStore.DemoIdentity.Persistance
 {
     public class Repository<TEntity, Tkey> : IRepository<TEntity, Tkey>
-                     where TEntity : class, IDisposable
+                     where TEntity : class
     {
         private readonly DbContext _dbContext;
         private readonly DbSet<TEntity> _dbSet;
@@ -56,5 +56,9 @@ namespace ShopStore.DemoIdentity.Persistance
             return false;
         }
 
+        public async Task DisposeASync()
+        {
+           await _dbContext.DisposeAsync();
+        }
     }
 }

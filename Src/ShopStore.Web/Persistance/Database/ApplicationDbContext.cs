@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using ShopStore.DemoIdentity.Entity;
+using ShopStore.DemoIdentity.Feature.Membership;
+using ShopStore.Web.Feature.Membership;
 
 namespace ShopStore.DemoIdentity.Persistance.Database
 {
-    public class ApplicationDbContext:IdentityDbContext,IApplicationDbContext
+    public class ApplicationDbContext:IdentityDbContext<User,Role,Guid,
+                 UserClaim,UserRole,UserLogin,RoleClaim,UserToken>,IApplicationDbContext
     {
 
         public readonly string _ConnectionString;
@@ -35,5 +38,7 @@ namespace ShopStore.DemoIdentity.Persistance.Database
         public DbSet<Investor> Investors { get; }
 
         public DbSet<Owner> Owners { get; }
+
+        
     }
 }
