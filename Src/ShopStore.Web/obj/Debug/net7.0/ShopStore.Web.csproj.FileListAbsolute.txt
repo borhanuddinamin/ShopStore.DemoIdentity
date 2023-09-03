@@ -585,3 +585,4 @@ D:\DevSkill\ShopStore.DemoIdentity\Src\ShopStore.Web\obj\Debug\net7.0\refint\Sho
 D:\DevSkill\ShopStore.DemoIdentity\Src\ShopStore.Web\obj\Debug\net7.0\ShopStore.Web.pdb
 D:\DevSkill\ShopStore.DemoIdentity\Src\ShopStore.Web\obj\Debug\net7.0\ShopStore.Web.genruntimeconfig.cache
 D:\DevSkill\ShopStore.DemoIdentity\Src\ShopStore.Web\obj\Debug\net7.0\ref\ShopStore.Web.dll
+F:\Git hub Project\ShopStore.DemoIdentity\Src\ShopStore.Web\bin\Debug\net7.0\libman.json
