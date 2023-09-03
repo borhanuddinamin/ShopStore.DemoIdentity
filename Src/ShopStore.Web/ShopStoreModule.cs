@@ -2,9 +2,10 @@
 using ShopStore.DemoIdentity.Models;
 
 using ShopStore.DemoIdentity.Persistance.Database;
-
+using ShopStore.Web.Models;
 using ShopStore.Web.Persistance.Repository;
 using ShopStore.Web.Persistance.Repository.RepositoryInterface;
+using ShopStore.Web.Securities.Token;
 
 internal class ShopStoreModule : Module
 {
@@ -55,6 +56,10 @@ internal class ShopStoreModule : Module
 
         builder.RegisterType<OwnerModel>()
             .AsSelf().InstancePerLifetimeScope();
+        builder.RegisterType<LoginModel>()
+           .AsSelf().InstancePerLifetimeScope();
+        builder.RegisterType<TokenService>().As<ITokenService>()
+            .InstancePerLifetimeScope();
 
         base.Load(builder);
     }

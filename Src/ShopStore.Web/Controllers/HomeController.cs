@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShopStore.DemoIdentity.Models;
+using ShopStore.Web.Models;
 using System.Diagnostics;
 
 namespace ShopStore.DemoIdentity.Controllers

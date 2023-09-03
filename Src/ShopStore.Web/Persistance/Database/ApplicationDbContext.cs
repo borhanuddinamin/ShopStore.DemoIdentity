@@ -13,7 +13,12 @@ namespace ShopStore.DemoIdentity.Persistance.Database
         public readonly string _ConnectionString;
         public  readonly string _migrationString;
 
-
+        public ApplicationDbContext(string connectionString, string migrationString)
+        {
+            _ConnectionString = connectionString;
+            _migrationString = migrationString;
+          
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -21,7 +26,7 @@ namespace ShopStore.DemoIdentity.Persistance.Database
             {
                 optionsBuilder.UseSqlServer(_ConnectionString,
                     
-                    (x) => x.MigrationsAssembly("_migrationString")
+                    (x) => x.MigrationsAssembly(_migrationString)
                     );
             }
             base.OnConfiguring(optionsBuilder);

@@ -20,7 +20,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddIdentity();
 
-
+var appString = "Server=DESKTOP-79BMRTE\\SQLEXPRESS;Database=DemoStore;TrustServerCertificate=true;Trusted_Connection=True;";
 builder.Services.AddAuthentication().AddCookie(
     options =>
     {
@@ -90,14 +90,19 @@ builder.Services.AddAuthorization(options =>
 });
 
 
-
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout=TimeSpan.FromMinutes(15);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 
 builder.Services.AddSingleton<IAuthorizationHandler,S_CustomerRequirmentsHandler>();
 
 
 //<!---Autofac Setting--->
-var connectionString = builder.Configuration.GetConnectionString("connectionString");
+
 
 //builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
@@ -108,7 +113,7 @@ builder.Host
   builder.Host
     .ConfigureContainer<ContainerBuilder>(container =>
   {
-      container.RegisterModule(new ShopStoreModule(connectionString, assembly));
+      container.RegisterModule(new ShopStoreModule(appString, assembly));
    });
 
 
@@ -130,6 +135,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",

@@ -10,6 +10,11 @@ namespace ShopStore.Web.Securities.Token
 
         private readonly IConfiguration configuration;
 
+
+        public TokenService()
+        {
+
+        }
         public TokenService(IConfiguration configuration)
         {
             this.configuration = configuration;
