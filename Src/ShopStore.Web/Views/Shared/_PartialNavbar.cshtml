@@ -1,0 +1,32 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@using ShopStore.DemoIdentity.Feature.Membership;
+@using ShopStore.Web.Feature.Membership;
+
+@inject SignInManager<User> SignInuser
+@inject UserManager<User> UserManager
+    <ul class="navbar-nav flex-grow-1">
+
+    @if (SignInuser.IsSignedIn(User))
+    {
+        <li class="nav-item mr-sm-2">
+            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">@User.Identity?.Name</a>
+        </li>
+        <li class="nav-item mr-sm-2">
+            <form asp-controller="Account" asp-action="LogOut">
+
+
+                <button class="nav-link text-dark">Logout</button>
+
+            </form>
+        </li>
+    }else
+    {
+    <li class="nav-item mr-sm-2">
+            <a class="nav-link text-dark" asp-controller="Account" asp-action="Registration">Registration</a>
+    </li>
+        <li class="nav-item mr-sm-2">
+            <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
+        </li>
+    }
+    </ul>
+

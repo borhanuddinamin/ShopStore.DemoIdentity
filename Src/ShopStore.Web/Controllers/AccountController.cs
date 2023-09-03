@@ -36,6 +36,7 @@ namespace ShopStore.Web.Controllers
 
             return View(model);
         }
+
         [HttpPost]
         public async Task<IActionResult> RegistrationAsync(RegistrationModel model)
         {
